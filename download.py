@@ -65,15 +65,16 @@ else:
 
 print("Done!")
 
-# download csv file (for each sheet)
-print("Step 4: Downloading .csv file for each worksheet...")
+# download xlsx file (for each sheet)
+# forked: edited csv to xlsx type output
+print("Step 4: Downloading .xlsx file for each worksheet...")
 
 for key in sheets.keys():
-    print(key + ".csv", end='...')
+    print(key + ".xlsx", end='...')
     gid = sheets[key]
-    url_csv = url[:-4] + "?output=csv&gid=" + gid
+    url_csv = url[:-4] + "?output=xlsx&gid=" + gid
     csv_content = requests.get(url_csv).content
-    fileName = key + ".csv"
+    fileName = key + ".xlsx"
     with open(fileName, 'wb') as file:
         file.write(csv_content)
     print("done!")
