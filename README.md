@@ -1,7 +1,7 @@
 # google-spreadsheet-downloader
 
 ## Description
-Download Google spreadsheet which the URL ends in "/pubhtml" and save it as a .csv file.  
+Download Google spreadsheet which the URL ends in "/pubhtml" and save it as a .xlsx file.  
 Based on Python.
 
 ## Usage
@@ -12,7 +12,7 @@ Based on Python.
 ### Use it
 1. Type the following command: `python download.py [url]`.  
 Be careful that `[url]` must be starts with `https://` and ends with `/pubhtml`.
-2. `[sheetname].csv` file(s) will appear in your working directory.
+2. `[sheetname].xlsx` file(s) will appear in your working directory.
 ### Example 
 `python download.py https://docs.google.com/spreadsheets/d/e/2PACX-1vTfW3r8Gw7qs8X5zK468KOxjf3YtqI9Y4Bv2CL05gdynrF2FNAnZmqlgPLJJhiwZN4_mn3y-uLil3MX/pubhtml`
 
